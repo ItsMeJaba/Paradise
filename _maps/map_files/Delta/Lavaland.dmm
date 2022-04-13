@@ -3806,6 +3806,14 @@
 	icon_state = "brown"
 	},
 /area/mine/living_quarters)
+"sm" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/plasteel,
+/area/mine/production)
 "sq" = (
 /turf/simulated/wall,
 /area/mine/laborcamp/security)
@@ -4990,6 +4998,11 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/plasteel,
 /area/mine/production)
 "FS" = (
@@ -5665,6 +5678,7 @@
 	pixel_y = -24
 	},
 /obj/machinery/light,
+/obj/structure/cable,
 /turf/simulated/floor/plasteel{
 	dir = 10;
 	icon_state = "brown"
@@ -5854,6 +5868,14 @@
 	icon_state = "brown"
 	},
 /area/mine/laborcamp)
+"RI" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plasteel,
+/area/mine/production)
 "RM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -21950,7 +21972,7 @@ aR
 wX
 Ub
 Vb
-Oe
+sm
 OL
 aR
 aR
@@ -22207,7 +22229,7 @@ GR
 sZ
 GR
 SK
-Oe
+RI
 FC
 Jm
 lC
