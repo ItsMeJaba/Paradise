@@ -865,6 +865,25 @@
 		message_admins("<b>FERRY: <font color='blue'>[key_name_admin(usr)] (<A HREF='?_src_=holder;secretsfun=moveferry'>Move Ferry</a>)</b> is requesting to move the transport ferry to Centcom.</font>")
 		return TRUE
 
+<<<<<<< Updated upstream
+=======
+
+/obj/machinery/computer/shuttle/ruins_transport_shuttle // this shuttle made for station and listening post of ussp since they have lore connection between eachother, btw the shuttle existed before the change but was deleted for some reason.
+	name = "Transport Shuttle Console"
+	desc = "Used to control the Transport Shuttle."
+	circuit = /obj/item/circuitboard/ruins_transport_shuttle
+	shuttleId = "ruins_transport_shuttle"
+	possible_destinations = "ussp_dock;dj_post;sindiecake_dock"
+
+
+/obj/machinery/computer/shuttle/ruins_civil_shuttle // made another shuttle, this one will fly between spacebar and twin nexus hotel. just another way to get to it.
+	name = "Regular Civilian Shuttle Console"
+	desc = "Used to control the Regular Civilian Shuttle."
+	circuit = /obj/item/circuitboard/ruins_civil_shuttle
+	shuttleId = "ruins_civil_shuttle"
+	possible_destinations = "spacebar;spacehotelv1"
+
+>>>>>>> Stashed changes
 
 /obj/machinery/computer/shuttle/white_ship
 	name = "White Ship Console"

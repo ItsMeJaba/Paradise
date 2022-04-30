@@ -472,6 +472,10 @@
 	modules += new /obj/item/card/emag(src)
 	modules += new /obj/item/crowbar/cyborg(src)
 	modules += new /obj/item/pinpointer/operative(src)
+<<<<<<< Updated upstream
+=======
+	modules += new /obj/item/gps/syndiecyborg(src)
+>>>>>>> Stashed changes
 	emag = null
 
 	fix_modules()
@@ -505,6 +509,10 @@
 	modules += new /obj/item/stack/cable_coil/cyborg(src)
 	modules += new /obj/item/stack/rods/cyborg(src)
 	modules += new /obj/item/stack/tile/plasteel/cyborg(src)
+<<<<<<< Updated upstream
+=======
+	modules += new /obj/item/gps/syndiecyborg(src)
+>>>>>>> Stashed changes
 	emag = null
 
 	fix_modules()
@@ -526,6 +534,10 @@
 	modules += new /obj/item/pickaxe/drill/jackhammer(src) // for breaking walls to execute flanking moves
 	modules += new /obj/item/borg/destroyer/mobility(src)
 	modules += new /obj/item/crowbar/cyborg(src)
+<<<<<<< Updated upstream
+=======
+	modules += new /obj/item/gps/syndiecyborg(src)
+>>>>>>> Stashed changes
 	emag = null
 	fix_modules()
 

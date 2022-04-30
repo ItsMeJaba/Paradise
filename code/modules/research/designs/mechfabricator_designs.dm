@@ -1351,3 +1351,61 @@
 	construction_time = 50
 	build_path = /obj/item/mecha_modkit/voice/syndicate
 	category = list("Misc")
+<<<<<<< Updated upstream
+=======
+
+/datum/design/syndicate_robotic_brain
+	name = "Syndicate Robotic Brain"
+	desc = "The latest in Anti-Monopolistic non-sentient Artificial Intelligences. Property of the Syndicate!"
+	id = "mmi_robotic_syndicate"
+	req_tech = list("programming" = 4, "biotech" = 3, "plasmatech" = 2,"syndicate" = 6)
+	build_type = MECHFAB
+	materials = list(MAT_METAL = 1700, MAT_GLASS = 2700, MAT_GOLD = 1000, MAT_TITANIUM = 1000)
+	construction_time = 75
+	build_path = /obj/item/mmi/robotic_brain/syndicate
+	category = list("Syndicate")
+
+/datum/design/syndicate_quantumpad
+	name = "Syndicate Quantumpad Curcuit"
+	desc = "Circuit board for constructing special redspace quantumpad capable of ignoring bluespace interference! Property of the Syndicate!"
+	id = "syndicate_quantumpad"
+	req_tech = list("programming" = 3, "engineering" = 3, "plasmatech" = 3,"syndicate" = 6)
+	build_type = MECHFAB
+	materials = list(MAT_GLASS = 1000, MAT_BLUESPACE = 2000)
+	construction_time = 50
+	build_path = /obj/item/circuitboard/quantumpad/syndiepad
+	category = list("Syndicate")
+
+/datum/design/syndicate_cargo_console
+	name = "Syndicate Supply Pad Console Curcuit"
+	desc = "Circuit board for constructing your own black market console! Property of the Syndicate!"
+	id = "syndicate_supply_pad"
+	req_tech = list("programming" = 3, "syndicate" = 3)
+	build_type = MECHFAB
+	materials = list(MAT_GLASS = 1000)
+	construction_time = 50
+	build_path = /obj/item/circuitboard/syndicatesupplycomp
+	category = list("Syndicate")
+
+/datum/design/syndicate_public_cargo_console
+	name = "Syndicate Public Supply Pad Console Curcuit"
+	desc = "Circuit board for constructing your own public black market console! Property of the Syndicate!"
+	id = "syndicate_public_supply_pad"
+	req_tech = list("programming" = 3, "syndicate" = 3)
+	build_type = MECHFAB
+	materials = list(MAT_GLASS = 1000)
+	construction_time = 50
+	build_path = /obj/item/circuitboard/syndicatesupplycomp/public
+	category = list("Syndicate")
+
+/datum/design/syndicate_borg_RCD_upgrade
+	name = "Syndicate cyborg RCD upgrade"
+	desc = "An experimental upgrade that replaces cyborgs RCDs with the syndicate version."
+	id = "syndicate_cyborg_RCD_upgrade"
+	req_tech = list("engineering" = 6, "materials" = 6, "syndicate" = 5)
+	build_type = MECHFAB
+	materials = list(MAT_METAL = 2000, MAT_GLASS = 2000, MAT_GOLD = 1000, MAT_TITANIUM = 5000, MAT_PLASMA = 5000)
+	construction_time = 50
+	build_path = /obj/item/borg/upgrade/syndie_rcd
+	category = list("Syndicate")
+>>>>>>> Stashed changes
