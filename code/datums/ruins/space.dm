@@ -145,6 +145,7 @@
 		engine is somewhere in the area. We'd like to request a patrol vessel \
 		to investigate."
 	cost = 2
+	allow_duplicates = FALSE // has sercet documents, should dup in space
 
 /datum/map_template/ruin/space/spacebar
 	id = "spacebar"
