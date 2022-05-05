@@ -547,6 +547,48 @@
 	icon_opened = "engisecurecrateopen"
 	icon_closed = "engisecurecrate"
 
+/obj/structure/closet/crate/engineering/emitter/populate_contents()
+	name = "Emitter Crate"
+	new /obj/machinery/power/emitter(src)
+	new /obj/machinery/power/emitter(src)
+
+/obj/structure/closet/crate/engineering/field_gen/populate_contents()
+	name = "Field Generator Crate"
+	new /obj/machinery/field/generator(src)
+	new /obj/machinery/field/generator(src)
+
+/obj/structure/closet/crate/engineering/coil/populate_contents()
+	name = "Tesla Coil Crate"
+	new /obj/machinery/power/tesla_coil(src)
+	new /obj/machinery/power/tesla_coil(src)
+	new /obj/machinery/power/tesla_coil(src)
+
+/obj/structure/closet/crate/engineering/grounding/populate_contents()
+	name = "Grounding Rod Crate"
+	new /obj/machinery/power/grounding_rod(src)
+	new /obj/machinery/power/grounding_rod(src)
+
+/obj/structure/closet/crate/engineering/collector/populate_contents()
+	name = "Collector Crate"
+	new /obj/machinery/power/rad_collector(src)
+	new /obj/machinery/power/rad_collector(src)
+	new /obj/machinery/power/rad_collector(src)
+
+/obj/structure/closet/crate/engineering/particle_accelerator/populate_contents()
+	name = "Particle Accelerator Crate"
+	new /obj/structure/particle_accelerator/fuel_chamber(src)
+	new /obj/machinery/particle_accelerator/control_box(src)
+	new /obj/structure/particle_accelerator/particle_emitter/center(src)
+	new /obj/structure/particle_accelerator/particle_emitter/left(src)
+	new /obj/structure/particle_accelerator/particle_emitter/right(src)
+	new /obj/structure/particle_accelerator/power_box(src)
+	new /obj/structure/particle_accelerator/end_cap(src)
+
+/obj/structure/closet/crate/secure/engineering/supermatter_shard/populate_contents()
+	name = "Supermatter Shard Crate"
+	new /obj/machinery/power/supermatter_shard(src)
+	req_access = ACCESS_CE
+
 /obj/structure/closet/crate/engineering/electrical
 	name = "electrical engineering crate"
 	desc = "An electrical engineering crate."
