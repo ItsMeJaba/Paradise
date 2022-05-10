@@ -18,20 +18,20 @@ export const GasFreezer = (props, context) => {
   return (
     <Window>
       <Window.Content>
-        <Section title="Статус" buttons={(
+        <Section title="Status" buttons={(
           <Button
             icon={on ? 'power-off' : 'times'}
-            content={on ? 'Вкл' : 'Выкл'}
+            content={on ? 'On' : 'Off'}
             selected={on}
             onClick={() => act('power')} />
         )}>
           <LabeledList>
-            <LabeledList.Item label="Давление">
-              {pressure} кПа
+            <LabeledList.Item label="Pressure">
+              {pressure} kpA
             </LabeledList.Item>
-            <LabeledList.Item label="Температура">
+            <LabeledList.Item label="Temperature">
               <Flex direction="row" justify="space-between">
-                <Flex.Item width="65%">
+                <Flex.Item width="70%">
                   <ProgressBar
                     value={ratio}
                     ranges={{
@@ -41,42 +41,42 @@ export const GasFreezer = (props, context) => {
                     &nbsp;
                   </ProgressBar>
                 </Flex.Item>
-                <Flex.Item width="35%">
+                <Flex.Item width="30%">
                   {ratio < 0.5 && (
                     <Box inline color="blue" ml={1}>
-                      {temperature} °K ({temperatureCelsius} °C)
+                      {temperature} K ({temperatureCelsius}&deg;C)
                     </Box>
                   )}
                   {ratio >= 0.5 && (
                     <Box inline color="red" ml={1}>
-                      {temperature} °K ({temperatureCelsius} °C)
+                      {temperature} K ({temperatureCelsius}&deg;C)
                     </Box>
                   )}
                 </Flex.Item>
               </Flex>
             </LabeledList.Item>
-            <LabeledList.Item label="Целевая температура">
+            <LabeledList.Item label="Target temperature">
               <Flex direction="row">
-                <Flex.Item width="65%" justify="end">
+                <Flex.Item width="70%" justify="end">
                   <ProgressBar value={(target - min) / (max - min)}>
                     &nbsp;
                   </ProgressBar>
                 </Flex.Item>
-                <Flex.Item width="35%">
-                  <Box inline ml={1}>{target} °K ({targetCelsius} °C)</Box>
+                <Flex.Item width="30%">
+                  <Box inline ml={1}>{target} K ({targetCelsius}&deg;C)</Box>
                 </Flex.Item>
               </Flex>
             </LabeledList.Item>
-            <LabeledList.Item label="Задать целевую температуру">
+            <LabeledList.Item label="Set target temperature">
               <Button
                 icon="fast-backward"
-                title="Минимальная температура"
+                title="Minimum temperature"
                 onClick={() => act('temp', {
                   temp: min,
                 })} />
               <NumberInput
                 value={Math.round(target)}
-                unit="°K"
+                unit="K"
                 minValue={Math.round(min)}
                 maxValue={Math.round(max)}
                 step={5}
@@ -86,7 +86,7 @@ export const GasFreezer = (props, context) => {
                 })} />
               <Button
                 icon="fast-forward"
-                title="Максимальная температура"
+                title="Maximum Temperature"
                 onClick={() => act('temp', {
                   temp: max,
                 })} />

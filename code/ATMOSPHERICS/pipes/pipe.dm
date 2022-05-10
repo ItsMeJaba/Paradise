@@ -40,6 +40,10 @@
 	if(istype(W, /obj/item/analyzer))
 		atmosanalyzer_scan(parent.air, user)
 		return
+
+	if(istype(W,/obj/item/pipe_painter))
+		return
+
 	return ..()
 
 /obj/machinery/atmospherics/proc/pipeline_expansion()

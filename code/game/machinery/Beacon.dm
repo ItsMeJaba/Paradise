@@ -4,8 +4,6 @@
 	name = "Bluespace Gigabeacon"
 	desc = "A device that draws power from bluespace and creates a permanent tracking beacon."
 	level = 1		// underfloor
-	layer = WIRE_LAYER
-	plane = FLOOR_PLANE
 	layer = 2.5
 	anchored = 1
 	use_power = IDLE_POWER_USE
@@ -28,8 +26,7 @@
 	Beacon.syndicate = syndicate
 	Beacon.area_bypass = area_bypass
 	Beacon.cc_beacon = cc_beacon
-	if(!T.transparent_floor)
-		hide(T.intact)
+	hide(T.intact)
 
 /obj/machinery/bluespace_beacon/proc/destroy_beacon()
 	QDEL_NULL(Beacon)

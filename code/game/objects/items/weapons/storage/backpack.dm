@@ -344,7 +344,7 @@
 	name = "suspicious looking duffelbag"
 	desc = "A large duffelbag for holding extra tactical supplies."
 	icon_state = "duffel-syndie"
-	item_state = "duffel-syndie"
+	item_state = "duffel-syndimed"
 	origin_tech = "syndicate=1"
 	silent = 1
 	slowdown = 0
