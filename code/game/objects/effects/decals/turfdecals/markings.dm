@@ -180,6 +180,12 @@
 /obj/effect/turf_decal/box/red/corners
 	icon_state = "box_corners_red"
 
+/obj/effect/turf_decal/box/blue
+	icon_state = "box_blue"
+
+/obj/effect/turf_decal/box/blue/corners
+	icon_state = "box_corners_blue"
+
 /obj/effect/turf_decal/plaque
 	icon_state = "plaque"
 
